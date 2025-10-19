@@ -239,6 +239,7 @@
             h1 {
                 font-size: 2.25rem !important;
                 line-height: 1.2;
+                min-height: 120px !important;
             }
 
             h2 {
@@ -496,15 +497,10 @@
 
         /* Typing Animation */
         .typing-cursor {
-            animation: blink 0.8s ease-in-out infinite;
             color: #b794ff;
             font-weight: 700;
             margin-left: 2px;
-        }
-
-        @keyframes blink {
-            0%, 49% { opacity: 1; }
-            50%, 100% { opacity: 0; }
+            opacity: 1;
         }
 
         .language-item {
@@ -571,7 +567,7 @@
         <div class="max-w-6xl mx-auto w-full">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div class="fade-in">
-                    <h1 class="text-6xl md:text-7xl font-bold mb-6 leading-relaxed" style="line-height: 1.3;">
+                    <h1 class="text-6xl md:text-7xl font-bold mb-6 leading-relaxed" style="line-height: 1.3; min-height: 180px;">
                         <span class="gradient-text"><span id="typing-text"></span><span class="typing-cursor">|</span></span>
                     </h1>
                     <h2 class="text-xl md:text-2xl text-gray-300 mb-8 font-light" data-i18n="hero_title">Full Stack Developer & AI Enthusiast</h2>
@@ -906,14 +902,10 @@
                         }
                         typingTimeoutId = setTimeout(typeChar, 100);
                     } else {
-                        // Finished typing, show blinking dot
+                        // Finished typing, show static cursor
                         cursorElement.textContent = '.';
                         cursorElement.style.display = 'inline';
-                        // Force animation restart
-                        cursorElement.style.animation = 'none';
-                        setTimeout(() => {
-                            cursorElement.style.animation = 'blink 0.8s ease-in-out infinite';
-                        }, 10);
+                        cursorElement.style.opacity = '1';
                         
                         typingTimeoutId = setTimeout(() => {
                             if (!isTypingActive) return;
