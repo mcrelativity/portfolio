@@ -307,6 +307,7 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            padding-bottom: 0.1em;
         }
 
         .card {
@@ -636,12 +637,12 @@
     <!-- Skills Section -->
     <section id="skills" class="py-20 px-4 md:px-8">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-4xl md:text-5xl font-bold mb-12 gradient-text" data-i18n="skills_title">Skills & Technologies</h2>
+            <h2 class="text-4xl md:text-5xl font-bold mb-12 gradient-text" data-i18n="skills_title" style="overflow: visible;">Skills & Technologies</h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12" style="align-items: stretch;">
                 <!-- Frontend -->
-                <div class="card fade-in stagger-1">
-                    <h3 class="text-xl font-bold text-purple-300 mb-6" data-i18n="skills_frontend">Frontend</h3>
+                <div class="card fade-in stagger-1" style="display: flex; flex-direction: column;">
+                    <h3 class="text-xl font-bold text-purple-300 mb-6" data-i18n="skills_frontend" style="min-height: 2rem;">Frontend</h3>
                     <div class="flex flex-wrap gap-2">
                         <span class="skill-badge">React</span>
                         <span class="skill-badge">TypeScript</span>
@@ -650,12 +651,13 @@
                         <span class="skill-badge">JavaScript</span>
                         <span class="skill-badge">HTML/CSS</span>
                         <span class="skill-badge">Vue.js</span>
+                        <span class="skill-badge">Responsive Design</span>
                     </div>
                 </div>
 
                 <!-- Backend -->
-                <div class="card fade-in stagger-2">
-                    <h3 class="text-xl font-bold text-purple-300 mb-6" data-i18n="skills_backend">Backend</h3>
+                <div class="card fade-in stagger-2" style="display: flex; flex-direction: column;">
+                    <h3 class="text-xl font-bold text-purple-300 mb-6" data-i18n="skills_backend" style="min-height: 2rem;">Backend</h3>
                     <div class="flex flex-wrap gap-2">
                         <span class="skill-badge">Node.js</span>
                         <span class="skill-badge">Python</span>
@@ -664,21 +666,24 @@
                         <span class="skill-badge">PostgreSQL</span>
                         <span class="skill-badge">MongoDB</span>
                         <span class="skill-badge">REST APIs</span>
+                        <span class="skill-badge">GraphQL</span>
                     </div>
                 </div>
 
                 <!-- Tools & Cloud -->
-                <div class="card fade-in stagger-3">
-                    <h3 class="text-xl font-bold text-purple-300 mb-6" data-i18n="skills_tools">Tools & Cloud</h3>
+                <div class="card fade-in stagger-3" style="display: flex; flex-direction: column;">
+                    <h3 class="text-xl font-bold text-purple-300 mb-6" data-i18n="skills_tools" style="min-height: 2rem;">Tools & Cloud</h3>
                     <div class="flex flex-wrap gap-2">
                         <span class="skill-badge">Docker</span>
+                        <span class="skill-badge">Kubernetes</span>
                         <span class="skill-badge">AWS</span>
-                        <span class="skill-badge">Git</span>
+                        <span class="skill-badge">Azure</span>
+                        <span class="skill-badge">GCP</span>
                         <span class="skill-badge">Linux</span>
                         <span class="skill-badge">GitHub</span>
                         <span class="skill-badge">CI/CD</span>
-                        <span class="skill-badge">Vercel</span>
                         <span class="skill-badge">Render</span>
+                        <span class="skill-badge">Vercel</span>
                     </div>
                 </div>
             </div>
@@ -695,6 +700,10 @@
                     <span class="skill-badge" data-i18n="soft_entrepreneurship">Entrepreneurship</span>
                     <span class="skill-badge" data-i18n="soft_communication">Communication</span>
                     <span class="skill-badge" data-i18n="soft_fast_learner">Fast Learner</span>
+                    <span class="skill-badge" data-i18n="soft_innovation">Innovation</span>
+                    <span class="skill-badge" data-i18n="soft_adaptability">Adaptability</span>
+                    <span class="skill-badge" data-i18n="soft_self_motivated">Self-Motivated</span>
+                    <span class="skill-badge" data-i18n="soft_critical_thinking">Critical Thinking</span>
                 </div>
             </div>
 
