@@ -1,0 +1,46 @@
+# Archivos Markdown y documentación local
+*.md
+*.txt
+
+# Archivos antiguos
+*.old.*
+*.bak
+
+# Backups
+backups/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+
+# Node modules (si llegas a usar npm)
+node_modules/
+
+# Archivos sensibles (si hubiera)
+.env
+.env.local
+config.json
+secrets.json

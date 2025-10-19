@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Foto de Perfil</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: #1f2937;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        
+        .container {
+            text-align: center;
+            background: #111827;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 20px 25px rgba(0,0,0,0.3);
+            max-width: 600px;
+        }
+        
+        h1 {
+            margin-bottom: 30px;
+            color: #667eea;
+        }
+        
+        .options {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        
+        button {
+            padding: 15px 30px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+        
+        .btn-svg {
+            background: #667eea;
+            color: white;
+        }
+        
+        .btn-svg:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+        }
+        
+        .btn-online {
+            background: #764ba2;
+            color: white;
+        }
+        
+        .btn-online:hover {
+            background: #667eea;
+            transform: translateY(-2px);
+        }
+        
+        .instructions {
+            background: #1f2937;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: left;
+            margin-top: 30px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .instructions h2 {
+            margin-top: 0;
+            color: #667eea;
+        }
+        
+        .instructions ol {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        
+        .instructions li {
+            margin: 8px 0;
+            line-height: 1.6;
+        }
+        
+        .preview {
+            margin: 30px 0;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+        }
+        
+        .preview svg {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        code {
+            background: #0f172a;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #667eea;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 Generador de Foto de Perfil</h1>
+        
+        <div class="options">
+            <button class="btn-svg" onclick="downloadSVG()">⬇️ Descargar SVG</button>
+            <button class="btn-online" onclick="openOnlineService()">🔗 Usar Servicio Online</button>
+        </div>
+        
+        <div class="preview">
+            <svg width="400" height="400" xmlns="http://www.w3.org/2000/svg" id="profileSVG">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <!-- Fondo -->
+                <rect width="400" height="400" fill="url(#grad1)"/>
+                
+                <!-- Cabeza -->
+                <circle cx="200" cy="130" r="50" fill="#fdbcb4"/>
+                
+                <!-- Cabello -->
+                <path d="M 150 130 Q 150 80 200 80 Q 250 80 250 130" fill="#2c2c2c"/>
+                <circle cx="160" cy="100" r="15" fill="#2c2c2c"/>
+                <circle cx="240" cy="100" r="15" fill="#2c2c2c"/>
+                
+                <!-- Ojos -->
+                <circle cx="185" cy="125" r="4" fill="#2c2c2c"/>
+                <circle cx="215" cy="125" r="4" fill="#2c2c2c"/>
+                
+                <!-- Nariz -->
+                <line x1="200" y1="130" x2="200" y2="145" stroke="#2c2c2c" stroke-width="2"/>
+                
+                <!-- Boca sonriente -->
+                <path d="M 185 155 Q 200 165 215 155" stroke="#2c2c2c" stroke-width="2" fill="none" stroke-linecap="round"/>
+                
+                <!-- Cuerpo/Hombros -->
+                <ellipse cx="200" cy="250" rx="80" ry="60" fill="#fdbcb4"/>
+                
+                <!-- Camiseta azul -->
+                <rect x="120" y="200" width="160" height="100" fill="#667eea" rx="10"/>
+                <circle cx="140" cy="220" r="8" fill="#764ba2"/>
+                <circle cx="260" cy="220" r="8" fill="#764ba2"/>
+                
+                <!-- Nombre -->
+                <text x="200" y="370" font-size="20" text-anchor="middle" fill="#ffffff" font-weight="bold">Emiliano</text>
+            </svg>
+        </div>
+        
+        <div class="instructions">
+            <h2>📍 Instrucciones</h2>
+            <ol>
+                <li><strong>Opción 1 - Descargar SVG:</strong> Haz clic en "⬇️ Descargar SVG" para descargar la imagen como archivo SVG</li>
+                <li><strong>Opción 2 - Servicio Online:</strong> Haz clic en "🔗 Usar Servicio Online" para ir a un generador online (Gravatar, Avatar Maker, etc.)</li>
+                <li>La imagen debe guardarse como <code>profile.jpg</code> en la carpeta <code>assets/</code></li>
+                <li>Tamaño recomendado: 400x400 píxeles</li>
+                <li>Si usas una foto tuya, convértela a JPG</li>
+            </ol>
+            
+            <h2>💡 Alternativas Recomendadas</h2>
+            <ul style="text-align: left;">
+                <li><a href="https://www.gravatar.com/" target="_blank" style="color: #667eea;">Gravatar</a> - Usa tu email de GitHub</li>
+                <li><a href="https://www.dicebear.com/" target="_blank" style="color: #667eea;">DiceBear Avatars</a> - Avatares estilo anime/pixel</li>
+                <li><a href="https://thispersondoesnotexist.com/" target="_blank" style="color: #667eea;">ThisPersonDoesNotExist</a> - Avatares realistas con IA</li>
+                <li><a href="https://avatarmaker.com/" target="_blank" style="color: #667eea;">Avatar Maker</a> - Crea tu propio avatar</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        function downloadSVG() {
+            const svg = document.getElementById('profileSVG');
+            const svgData = new XMLSerializer().serializeToString(svg);
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            const img = new Image();
+            
+            canvas.width = 400;
+            canvas.height = 400;
+            
+            img.onload = function() {
+                ctx.drawImage(img, 0, 0);
+                const link = document.createElement('a');
+                link.href = canvas.toDataURL('image/jpeg');
+                link.download = 'profile.jpg';
+                link.click();
+            };
+            
+            img.src = 'data:image/svg+xml;base64,' + btoa(svgData);
+        }
+        
+        function openOnlineService() {
+            window.open('https://www.dicebear.com/', '_blank');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+/* Additional custom styles for the portfolio */
+/* Tailwind CSS handles most styling, but these provide enhancements */
+
+:root {
+    --primary: #667eea;
+    --secondary: #764ba2;
+    --dark: #111827;
+    --darker: #0f172a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark);
+    color: #f3f4f6;
+    line-height: 1.6;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #667eea;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #764ba2;
+}
+
+/* Selection color */
+::selection {
+    background-color: #667eea;
+    color: white;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Focus states for accessibility */
+button:focus,
+input:focus,
+textarea:focus,
+a:focus {
+    outline: 2px solid #667eea;
+    outline-offset: 2px;
+}
+
+/* Mobile menu optimization */
+@media (max-width: 768px) {
+    nav {
+        padding: 0.5rem 0;
+    }
+    
+    .text-5xl {
+        font-size: 2.5rem;
+    }
+    
+    .text-4xl {
+        font-size: 1.875rem;
+    }
+}
+
+/* Animation improvements */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Print styles */
+@media print {
+    nav, footer {
+        display: none;
+    }
+}
