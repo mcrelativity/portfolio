@@ -22,7 +22,7 @@
         }
 
         body {
-            background: linear-gradient(135deg, #0f0f1e 0%, #1a1638 50%, #2d1b69 100%);
+            background: linear-gradient(135deg, #0f0f1e 0%, #1f1a50 50%, #3d24a1 100%);
             min-height: 100vh;
             color: #e0e0e0;
             overflow-x: hidden;
@@ -36,8 +36,8 @@
             width: 100%;
             height: 100%;
             background: 
-                radial-gradient(ellipse 1000px 400px at 50% -20%, rgba(147, 51, 234, 0.15), transparent 60%),
-                radial-gradient(ellipse 800px 600px at -10% 100%, rgba(59, 130, 246, 0.08), transparent 70%);
+                radial-gradient(ellipse 1000px 400px at 50% -20%, rgba(147, 51, 234, 0.25), transparent 60%),
+                radial-gradient(ellipse 800px 600px at -10% 100%, rgba(59, 130, 246, 0.18), transparent 70%);
             pointer-events: none;
             z-index: 0;
             animation: ambientShift 15s ease-in-out infinite;
@@ -82,7 +82,7 @@
         .nav-brand {
             font-size: 1.5rem;
             font-weight: 700;
-            background: linear-gradient(135deg, #a78bfa, #c084fc);
+            background: linear-gradient(135deg, #b794ff, #d896ff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -302,7 +302,7 @@
         }
 
         .gradient-text {
-            background: linear-gradient(135deg, #a78bfa, #c084fc, #f97316);
+            background: linear-gradient(135deg, #b794ff, #d896ff, #ff8a3d);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -369,9 +369,9 @@
 
         .skill-fill {
             height: 100%;
-            background: linear-gradient(90deg, #a78bfa, #c084fc, #f97316);
+            background: linear-gradient(90deg, #b794ff, #d896ff, #ff8a3d);
             border-radius: 2px;
-            box-shadow: 0 0 20px rgba(167, 139, 250, 0.5);
+            box-shadow: 0 0 20px rgba(183, 148, 255, 0.6);
         }
 
         .btn {
@@ -408,17 +408,17 @@
         }
 
         .btn-primary {
-            background: linear-gradient(135deg, #a78bfa, #c084fc);
+            background: linear-gradient(135deg, #b794ff, #d896ff);
             color: #fff;
             box-shadow: 
-                0 4px 15px rgba(167, 139, 250, 0.3),
+                0 4px 15px rgba(183, 148, 255, 0.4),
                 inset 0 1px 0 rgba(255, 255, 255, 0.2);
         }
 
         .btn-primary:hover {
             transform: translateY(-2px) scale(1.02);
             box-shadow: 
-                0 8px 25px rgba(167, 139, 250, 0.4),
+                0 8px 25px rgba(183, 148, 255, 0.5),
                 inset 0 1px 0 rgba(255, 255, 255, 0.3);
         }
 
@@ -427,9 +427,9 @@
         }
 
         .btn-secondary {
-            border: 1.5px solid rgba(167, 139, 250, 0.3);
-            color: #a78bfa;
-            background: rgba(167, 139, 250, 0.05);
+            border: 1.5px solid rgba(183, 148, 255, 0.4);
+            color: #b794ff;
+            background: rgba(183, 148, 255, 0.08);
             backdrop-filter: blur(10px);
             box-shadow: 
                 0 2px 10px rgba(0, 0, 0, 0.1),
@@ -437,12 +437,12 @@
         }
 
         .btn-secondary:hover {
-            border-color: rgba(167, 139, 250, 0.5);
-            background: rgba(167, 139, 250, 0.1);
-            color: #c084fc;
+            border-color: rgba(183, 148, 255, 0.6);
+            background: rgba(183, 148, 255, 0.15);
+            color: #d896ff;
             transform: translateY(-2px);
             box-shadow: 
-                0 6px 20px rgba(167, 139, 250, 0.2),
+                0 6px 20px rgba(183, 148, 255, 0.3),
                 inset 0 1px 0 rgba(255, 255, 255, 0.1);
         }
 
@@ -477,27 +477,27 @@
         .skill-badge {
             display: inline-block;
             padding: 0.5rem 1rem;
-            background: rgba(167, 139, 250, 0.1);
-            border: 1px solid rgba(167, 139, 250, 0.3);
+            background: rgba(183, 148, 255, 0.15);
+            border: 1px solid rgba(183, 148, 255, 0.4);
             border-radius: 20px;
             font-size: 0.85rem;
             font-weight: 500;
-            color: #c084fc;
+            color: #d896ff;
             margin: 0.3rem 0.3rem 0.3rem 0;
             transition: all 0.3s ease;
         }
 
         .skill-badge:hover {
-            background: rgba(167, 139, 250, 0.2);
-            border-color: rgba(167, 139, 250, 0.5);
+            background: rgba(183, 148, 255, 0.25);
+            border-color: rgba(183, 148, 255, 0.6);
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(167, 139, 250, 0.2);
+            box-shadow: 0 4px 12px rgba(183, 148, 255, 0.3);
         }
 
         /* Typing Animation */
         .typing-cursor {
             animation: blink 0.8s ease-in-out infinite;
-            color: #a78bfa;
+            color: #b794ff;
             font-weight: 700;
             margin-left: 2px;
         }
@@ -642,7 +642,7 @@
         <div class="max-w-6xl mx-auto">
             <h2 class="text-4xl md:text-5xl font-bold mb-12 gradient-text" data-i18n="skills_title">Skills & Technologies</h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
                 <!-- Frontend -->
                 <div class="card fade-in stagger-1">
                     <h3 class="text-xl font-bold text-purple-300 mb-6" data-i18n="skills_frontend">Frontend</h3>
@@ -683,6 +683,21 @@
                         <span class="skill-badge">CI/CD</span>
                         <span class="skill-badge">Vercel</span>
                         <span class="skill-badge">Render</span>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="card fade-in stagger-4">
+                    <h3 class="text-xl font-bold text-purple-300 mb-6" data-i18n="skills_soft">Soft Skills</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge">👥 Leadership</span>
+                        <span class="skill-badge">🤝 Teamwork</span>
+                        <span class="skill-badge">💡 Problem Solving</span>
+                        <span class="skill-badge">🎯 Goal-Oriented</span>
+                        <span class="skill-badge">📊 Data-Driven</span>
+                        <span class="skill-badge">🚀 Entrepreneurship</span>
+                        <span class="skill-badge">💬 Communication</span>
+                        <span class="skill-badge">⚡ Fast Learner</span>
                     </div>
                 </div>
             </div>
