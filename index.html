@@ -496,15 +496,15 @@
 
         /* Typing Animation */
         .typing-cursor {
-            animation: blink 1s infinite;
+            animation: blink 0.8s ease-in-out infinite;
             color: #a78bfa;
-            font-weight: 300;
-            margin-left: 4px;
+            font-weight: 700;
+            margin-left: 2px;
         }
 
         @keyframes blink {
-            0%, 50% { opacity: 1; }
-            51%, 100% { opacity: 0; }
+            0%, 49% { opacity: 1; }
+            50%, 100% { opacity: 0; }
         }
 
         .language-item {
@@ -571,7 +571,7 @@
         <div class="max-w-6xl mx-auto w-full">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div class="fade-in">
-                    <h1 class="text-6xl md:text-7xl font-bold mb-6 leading-tight">
+                    <h1 class="text-6xl md:text-7xl font-bold mb-6 leading-relaxed" style="line-height: 1.3;">
                         <span class="gradient-text"><span id="typing-text"></span><span class="typing-cursor">|</span></span>
                     </h1>
                     <h2 class="text-xl md:text-2xl text-gray-300 mb-8 font-light" data-i18n="hero_title">Full Stack Developer & AI Enthusiast</h2>
@@ -835,11 +835,25 @@
     <script src="js/language.js"></script>
     <script>
         // Typing Animation Effect with blinking dot and loop
+        let typingTimeoutId = null;
+        let isTypingActive = false;
+        
         window.typeWriter = function() {
             const typingElement = document.getElementById('typing-text');
             const cursorElement = document.querySelector('.typing-cursor');
             
             if (!typingElement || !cursorElement) return;
+            
+            // Clear any existing animation
+            if (typingTimeoutId) {
+                clearTimeout(typingTimeoutId);
+                typingTimeoutId = null;
+            }
+            
+            // Reset state
+            isTypingActive = false;
+            typingElement.innerHTML = '';
+            cursorElement.style.display = 'none';
             
             // Get current language
             let currentLang = localStorage.getItem('portfolio-language');
@@ -856,11 +870,11 @@
             const fullText = texts[currentLang];
             let charIndex = 0;
             let isTyping = true;
-            
-            // Hide default cursor during typing, show blinking dot after
-            cursorElement.style.display = 'none';
+            isTypingActive = true;
             
             function typeChar() {
+                if (!isTypingActive) return; // Stop if interrupted
+                
                 if (isTyping) {
                     // Typing phase
                     if (charIndex < fullText.length) {
@@ -874,12 +888,19 @@
                             typingElement.innerHTML += char;
                             charIndex++;
                         }
-                        setTimeout(typeChar, 100);
+                        typingTimeoutId = setTimeout(typeChar, 100);
                     } else {
                         // Finished typing, show blinking dot
                         cursorElement.textContent = '.';
                         cursorElement.style.display = 'inline';
+                        // Force animation restart
+                        cursorElement.style.animation = 'none';
                         setTimeout(() => {
+                            cursorElement.style.animation = 'blink 0.8s ease-in-out infinite';
+                        }, 10);
+                        
+                        typingTimeoutId = setTimeout(() => {
+                            if (!isTypingActive) return;
                             // After 2 seconds, start erasing
                             isTyping = false;
                             cursorElement.style.display = 'none';
@@ -890,6 +911,8 @@
             }
             
             function eraseChar() {
+                if (!isTypingActive) return; // Stop if interrupted
+                
                 if (charIndex > 0) {
                     // Erase one character at a time
                     const currentHTML = typingElement.innerHTML;
@@ -903,10 +926,11 @@
                         charIndex--;
                     }
                     
-                    setTimeout(eraseChar, 50);
+                    typingTimeoutId = setTimeout(eraseChar, 50);
                 } else {
                     // Finished erasing, restart typing
-                    setTimeout(() => {
+                    typingTimeoutId = setTimeout(() => {
+                        if (!isTypingActive) return;
                         isTyping = true;
                         charIndex = 0;
                         cursorElement.style.display = 'none';
@@ -915,9 +939,8 @@
                 }
             }
             
-            // Start typing
-            typingElement.innerHTML = '';
-            typeChar();
+            // Start typing after a small delay
+            typingTimeoutId = setTimeout(typeChar, 100);
         }
         
         // Start typing animation when page loads

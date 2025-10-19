@@ -8,7 +8,7 @@ const translations = {
         nav_contact: "Contact",
         hero_greeting: "Hey, I'm",
         hero_title: "Full Stack Developer & AI Enthusiast",
-        hero_bio: "I build beautiful, scalable web applications with a passion for AI and data analysis. Specialized in modern web technologies, machine learning integration, and cloud infrastructure.",
+        hero_bio: "I build elegant, scalable web applications with a focus on AI and automation. Passionate about creating tools that developers actually want to use.",
         cta_projects: "View Projects",
         cta_contact: "Get in Touch",
         hero_social: "Connect with me:",
@@ -17,9 +17,9 @@ const translations = {
         stats_startup: "Founder @ Intone",
         stats_skills: "AWS In Progress",
         about_title: "About Me",
-        about_paragraph1: "I'm a Full Stack Developer from Chile, recently graduated with a strong passion for building innovative AI-powered solutions and automation tools. My focus is on turning ideas into functional, scalable products that solve real problems in the tech ecosystem.",
-        about_paragraph2: "Currently, I'm launching my own startup Intone (intone.app) under NAMTAFLABS, where I'm developing intelligent automation and AI tools for developers. My recent projects like LucidSpeakAI demonstrate my expertise in AI integration, while Stock Tracker showcases my ability to build robust inventory management systems.",
-        about_paragraph3: "I'm fluent in Spanish (native), proficient in English (advanced), and have intermediate Portuguese skills. I'm also pursuing my AWS Cloud Practitioner certification to expand my cloud infrastructure expertise. My philosophy: build fast, iterate based on feedback, and always focus on user experience.",
+        about_paragraph1: "I'm a Full Stack Developer from Chile with a passion for building AI-powered solutions and automation tools. I turn ideas into functional, scalable products that solve real problems for developers and businesses.",
+        about_paragraph2: "I'm currently building Intone (intone.app), my startup under NAMTAFLABS, where I develop intelligent automation and AI tools for developers. Projects like LucidSpeakAI showcase my AI integration skills, while Stock Tracker demonstrates my ability to build robust, real-world systems.",
+        about_paragraph3: "As a native Spanish speaker, I'm also fluent in English and conversational in Portuguese. Currently pursuing my AWS Cloud Practitioner certification to deepen my cloud infrastructure expertise. My approach is simple: ship fast, learn from users, and never compromise on experience.",
         experience_title: "My Journey",
         exp_role1: "Founder @ Intone",
         exp_company1: "NAMTAFLABS - Personal Projects Startup",
@@ -72,11 +72,11 @@ const translations = {
         footer_domain_label: "Explore more at:",
         languages_title: "Languages",
         lang_spanish: "Spanish",
-        lang_spanish_level: "Native Speaker",
+        lang_spanish_level: "Native",
         lang_english: "English",
-        lang_english_level: "Advanced / Fluent",
+        lang_english_level: "Fluent",
         lang_portuguese: "Portuguese",
-        lang_portuguese_level: "Intermediate"
+        lang_portuguese_level: "Conversational"
     },
     es: {
         meta_title: "Emiliano Gómez - Desarrollador Full Stack",
@@ -86,7 +86,7 @@ const translations = {
         nav_contact: "Contacto",
         hero_greeting: "Hola, soy",
         hero_title: "Desarrollador Full Stack e Entusiasta de IA",
-        hero_bio: "Construyo aplicaciones web hermosas y escalables con pasión por IA y análisis de datos. Especializado en tecnologías web modernas, integración de machine learning e infraestructura en la nube.",
+        hero_bio: "Construyo aplicaciones web elegantes y escalables con enfoque en IA y automatización. Me apasiona crear herramientas que los desarrolladores realmente quieran usar.",
         cta_projects: "Ver Proyectos",
         cta_contact: "Ponte en Contacto",
         hero_social: "Conéctate conmigo:",
@@ -95,9 +95,9 @@ const translations = {
         stats_startup: "Fundador @ Intone",
         stats_skills: "AWS En Progreso",
         about_title: "Acerca de Mí",
-        about_paragraph1: "Soy un Desarrollador Full Stack de Chile, recientemente graduado con una fuerte pasión por construir soluciones innovadoras impulsadas por IA y herramientas de automatización. Mi enfoque es convertir ideas en productos funcionales y escalables que resuelven problemas reales en el ecosistema tecnológico.",
-        about_paragraph2: "Actualmente, estoy lanzando mi propia startup Intone (intone.app) bajo NAMTAFLABS, donde estoy desarrollando herramientas de automatización inteligente e IA para desarrolladores. Mis proyectos recientes como LucidSpeakAI demuestran mi experiencia en integración de IA, mientras que Stock Tracker muestra mi capacidad para construir sistemas robustos de gestión de inventario.",
-        about_paragraph3: "Soy fluido en español (nativo), competente en inglés (avanzado) y tengo habilidades intermedias en portugués. También estoy persiguiendo mi certificación AWS Cloud Practitioner para expandir mi experiencia en infraestructura en la nube. Mi filosofía: construir rápido, iterar basándome en retroalimentación y siempre enfocarse en la experiencia del usuario.",
+        about_paragraph1: "Soy Desarrollador Full Stack de Chile, apasionado por crear soluciones impulsadas por IA y herramientas de automatización. Convierto ideas en productos funcionales y escalables que resuelven problemas reales para desarrolladores y empresas.",
+        about_paragraph2: "Actualmente estoy construyendo Intone (intone.app), mi startup bajo NAMTAFLABS, donde desarrollo herramientas de automatización e IA para desarrolladores. Proyectos como LucidSpeakAI demuestran mis habilidades en integración de IA, mientras que Stock Tracker muestra mi capacidad para construir sistemas robustos del mundo real.",
+        about_paragraph3: "Hablo español nativamente, inglés con fluidez y portugués a nivel conversacional. Actualmente estoy completando mi certificación AWS Cloud Practitioner para profundizar mi experiencia en infraestructura cloud. Mi enfoque es directo: lanzar rápido, aprender de los usuarios y nunca comprometer la experiencia.",
         experience_title: "Mi Trayectoria",
         exp_role1: "Fundador @ Intone",
         exp_company1: "NAMTAFLABS - Startup de Proyectos Personales",
@@ -150,11 +150,11 @@ const translations = {
         footer_domain_label: "Explora más en:",
         languages_title: "Idiomas",
         lang_spanish: "Español",
-        lang_spanish_level: "Hablante Nativo",
+        lang_spanish_level: "Nativo",
         lang_english: "Inglés",
-        lang_english_level: "Avanzado / Fluido",
+        lang_english_level: "Fluido",
         lang_portuguese: "Portugués",
-        lang_portuguese_level: "Intermedio"
+        lang_portuguese_level: "Conversacional"
     }
 };
 
