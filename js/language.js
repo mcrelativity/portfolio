@@ -7,7 +7,7 @@ const translations = {
         nav_projects: "Projects",
         nav_contact: "Contact",
         hero_greeting: "Hey, I'm",
-        hero_title: "Full Stack Developer, AI Enthusiast & Data Analysis",
+        hero_title: "Full Stack Developer, AI Enthusiast & Data-Driven Solutions",
         hero_bio: "I build elegant, scalable web applications with a focus on AI and automation. Passionate about creating tools that developers actually want to use.",
         cta_projects: "View Projects",
         cta_contact: "Get in Touch",
