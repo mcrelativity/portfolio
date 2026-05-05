@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="meta_title">Emiliano Gómez - Full Stack Developer</title>
-    <meta name="description" content="Full Stack Developer specializing in AI, data analysis, and modern web technologies. Building scalable applications and intelligent automation tools.">
-    <meta name="keywords" content="Full Stack Developer, AI, Machine Learning, Web Development, React, Node.js, Python, Chile">
+    <meta name="description" content="Full Stack Developer and AWS Solutions Architect - Associate specializing in AI, automation, and scalable web products.">
+    <meta name="keywords" content="Full Stack Developer, AWS Solutions Architect, AI, Automation, Web Development, React, Node.js, Python, Chile">
     <meta name="author" content="Emiliano Gómez">
-    <meta property="og:title" content="Emiliano Gómez - Full Stack Developer & AI Enthusiast">
-    <meta property="og:description" content="Building innovative AI-powered solutions and scalable web applications.">
+    <meta property="og:title" content="Emiliano Gómez - Full Stack Developer & AWS Solutions Architect">
+    <meta property="og:description" content="Building AI-driven products and cloud-first web applications with a product-first mindset.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://intone.app">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Emiliano Gómez - Full Stack Developer">
-    <meta name="twitter:description" content="Specialized in AI, data analysis, and modern web technologies.">
+    <meta name="twitter:title" content="Emiliano Gómez - Full Stack Developer & AWS Solutions Architect">
+    <meta name="twitter:description" content="AI-driven products, automation, and cloud-first web applications.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -497,8 +497,25 @@
         }
 
         /* Typing Animation */
+        .typing-wrapper {
+            display: inline-block;
+            height: 4em;
+            line-height: 1.3;
+            overflow: hidden;
+        }
+
+        @media (min-width: 768px) {
+            .typing-wrapper {
+                height: 4em;
+            }
+        }
+
         .typing-cursor {
-            color: #b794ff;
+            background: linear-gradient(135deg, #b794ff, #d896ff, #ff8a3d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            padding-bottom: 0.1em;
             font-weight: 700;
             margin-left: 2px;
             opacity: 1;
@@ -568,11 +585,11 @@
         <div class="max-w-6xl mx-auto w-full">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div class="fade-in">
-                    <h1 class="text-6xl md:text-7xl font-bold mb-6 leading-relaxed" style="line-height: 1.3; min-height: 180px;">
-                        <span class="gradient-text"><span id="typing-text"></span><span class="typing-cursor">|</span></span>
+                    <h1 class="text-6xl md:text-7xl font-bold mb-0 leading-relaxed" style="line-height: 1.3; min-height: 120px;">
+                        <span class="typing-wrapper"><span class="gradient-text" id="typing-text"></span><span class="gradient-text typing-cursor">|</span></span>
                     </h1>
-                    <h2 class="text-xl md:text-2xl text-gray-300 mb-8 font-light" data-i18n="hero_title">Full Stack Developer & AI Enthusiast</h2>
-                    <p class="text-gray-400 text-lg mb-8 max-w-lg leading-relaxed" data-i18n="hero_bio">I build beautiful, scalable web applications and love contributing to open source projects. Specialized in modern web technologies and cloud infrastructure.</p>
+                    <h2 class="text-xl md:text-2xl text-gray-300 mb-0 font-light" data-i18n="hero_title">Full Stack Developer & AI Enthusiast</h2>
+                    <p class="text-gray-400 text-lg mb-4 max-w-lg leading-relaxed" data-i18n="hero_bio">I build beautiful, scalable web applications and love contributing to open source projects. Specialized in modern web technologies and cloud infrastructure.</p>
 
                     <div class="flex flex-wrap gap-4">
                         <a href="#projects" class="btn btn-primary" data-i18n="cta_projects">View Projects</a>
@@ -734,6 +751,49 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Certifications Section -->
+            <div class="border-t border-purple-400/20 pt-12 mt-12">
+                <h3 class="text-3xl font-bold text-white mb-8" data-i18n="certifications_heading">Certifications</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="card fade-in stagger-1">
+                        <div class="flex items-center gap-4">
+                            <img src="https://images.credly.com/size/340x340/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png" alt="AWS Solutions Architect - Associate badge" class="w-20 h-20 object-contain">
+                            <div>
+                                <h4 class="text-lg font-bold text-white" data-i18n="cert_aws">AWS Solutions Architect - Associate</h4>
+                                <p class="text-gray-400 text-sm" data-i18n="cert_aws_status">Certified</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card fade-in stagger-2">
+                        <div class="flex items-center gap-4">
+                            <img src="https://images.credly.com/size/340x340/images/6f40bf38-1725-40d8-99a2-f6bb1bafec0e/blob" alt="Certification badge" class="w-20 h-20 object-contain">
+                            <div>
+                                <h4 class="text-lg font-bold text-white" data-i18n="cert_badge_one">Certification Badge</h4>
+                                <p class="text-gray-400 text-sm" data-i18n="cert_badge_one_desc">Official Credly credential</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card fade-in stagger-3">
+                        <div class="flex items-center gap-4">
+                            <img src="https://images.credly.com/size/340x340/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png" alt="Certification badge" class="w-20 h-20 object-contain">
+                            <div>
+                                <h4 class="text-lg font-bold text-white" data-i18n="cert_badge_two">Certification Badge</h4>
+                                <p class="text-gray-400 text-sm" data-i18n="cert_badge_two_desc">Official Credly credential</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card fade-in stagger-4">
+                        <div class="flex items-center gap-4">
+                            <img src="https://images.credly.com/size/340x340/images/88c25fa4-9007-42cc-b9c5-16441a878507/GCC_badge_DA_1000x1000.png" alt="Google Data Analytics badge" class="w-20 h-20 object-contain">
+                            <div>
+                                <h4 class="text-lg font-bold text-white" data-i18n="cert_google_analytics">Google Data Analytics Professional</h4>
+                                <p class="text-gray-400 text-sm" data-i18n="cert_google_analytics_desc">Professional Certificate & Specialization</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -849,7 +909,7 @@
     <footer class="py-8 px-4 md:px-8 border-t border-purple-400/10">
         <div class="max-w-6xl mx-auto text-center text-gray-400 text-sm">
             <p class="mb-2"><span data-i18n="footer_text_prefix">Made with ❤️ by Emiliano Gómez ©</span> <span id="year">2025</span></p>
-            <p><span data-i18n="footer_domain_label">Explore more at:</span> <a href="https://promptgg.app" target="_blank" class="text-purple-400 hover:text-purple-300">promptgg.app</a> • <a href="https://intone.app" target="_blank" class="text-purple-400 hover:text-purple-300">intone.app</a></p>
+            <p><span data-i18n="footer_domain_label">Explore more at:</span> <a href="https://intone.app" target="_blank" class="text-purple-400 hover:text-purple-300">intone.app</a> • <a href="https://promptgg.app" target="_blank" class="text-purple-400 hover:text-purple-300">promptgg.app</a></p>
         </div>
     </footer>
 
@@ -883,7 +943,10 @@
                 currentLang = browserLanguage === 'es' ? 'es' : 'en';
             }
             
-            const texts = {
+            const texts = window.innerWidth >= 768 ? {
+                en: "Hey, I'm<br>Emiliano<br>Gómez",
+                es: "Hola, soy<br>Emiliano<br>Gómez"
+            } : {
                 en: "Hey, I'm<br>Emiliano Gómez",
                 es: "Hola, soy<br>Emiliano Gómez"
             };

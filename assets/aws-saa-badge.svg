@@ -1,0 +1,18 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AWS Solutions Architect - Associate badge">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f2937"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+  </defs>
+  <circle cx="120" cy="120" r="110" fill="url(#bg)" stroke="url(#ring)" stroke-width="10"/>
+  <circle cx="120" cy="120" r="92" fill="#0b1220" stroke="#f59e0b" stroke-opacity="0.3" stroke-width="2"/>
+  <text x="120" y="92" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="20" fill="#f59e0b" font-weight="700">AWS</text>
+  <text x="120" y="126" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="18" fill="#e5e7eb" font-weight="600">Solutions Architect</text>
+  <text x="120" y="154" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="16" fill="#d1d5db">Associate</text>
+  <text x="120" y="190" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="12" fill="#9ca3af">Certified</text>
+</svg>
