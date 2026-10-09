@@ -1,0 +1,13 @@
+{
+  "name": "emiliano-liquid-glass-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Emiliano Gómez — Liquid Glass personal portfolio",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs dist"
+  },
+  "engines": { "node": ">=22" }
+}

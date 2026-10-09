@@ -1,5 +1,5 @@
 # Archivos Markdown y documentación local
-*.md
+!README.md
 *.txt
 
 # Archivos antiguos
@@ -42,5 +42,7 @@ node_modules/
 # Archivos sensibles (si hubiera)
 .env
 .env.local
+dist/
+.vercel/
 config.json
 secrets.json
