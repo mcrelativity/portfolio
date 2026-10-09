@@ -16,9 +16,9 @@ La compilación copia únicamente los archivos públicos necesarios a `dist/`. L
 
 ## Vercel
 
-Importar `mcrelativity/portfolio` y elegir la rama `liquid-glass` como rama de producción del proyecto nuevo. Framework: **Other**. Build: `npm run build`. Output: `dist`. `vercel.json` configura estos valores y los encabezados HTTP. No se necesitan variables de entorno.
+Proyecto: `emiliano-liquid-glass`. Sitio: https://emiliano-liquid-glass.vercel.app. Repositorio: `mcrelativity/portfolio`, rama `liquid-glass`. Framework: **Other**. Build: `npm run build`. Output: `dist`. `vercel.json` configura estos valores y los encabezados HTTP. No se necesitan variables de entorno.
 
-El portafolio personal es compatible con Vercel Hobby, sujeto a sus límites de uso. Usar un proyecto nuevo permite conservar el despliegue anterior. Las nuevas actualizaciones a la rama de producción se despliegan automáticamente cuando el repositorio está conectado a Vercel.
+El portafolio personal está publicado con Vercel Hobby, sujeto a sus límites de uso. El proyecto nuevo conserva el despliegue anterior. La versión final de `liquid-glass` se promovió explícitamente a producción. Los nuevos pushes a esta rama generan previews automáticamente; para publicarlos, usar **Promote to Production** en Vercel. Si se desea publicación automática en la URL principal, configurar `liquid-glass` como rama de producción en los ajustes del entorno Production de este proyecto.
 
 ## Contenido y accesibilidad
 
