@@ -4,7 +4,7 @@
     skip: 'Skip to content', nav_projects: 'Projects', nav_about: 'About me', nav_skills: 'Stack', nav_certifications: 'Credentials', nav_contact: 'Let’s talk',
     hero_greeting: 'Hi, I’m', hero_tagline: 'From a good idea to a great product.',
     hero_description: 'I build web applications, integrate AI, and design cloud solutions. Clear code, simple experiences, and products that solve real problems.',
-    cta_projects: 'Explore projects', cta_contact: 'Let’s connect', available_short: 'Open to opportunities', portrait_role: 'Developer & maker', currently_building: 'Currently building',
+    cta_projects: 'Explore projects', cta_contact: 'Let’s connect', available_short: 'Open to opportunities', portrait_role: 'Developer & maker', currently_building: 'Currently building', light_label: 'Light', scene_crystal: 'Crystal',
     strip_intro: 'From frontend to cloud.', strip_ai: 'Artificial intelligence', projects_eyebrow: '01 / SELECTED WORK', projects_title: 'Ideas, shipped.',
     projects_summary: 'AI, automation, and the web. A selection of what I’ve been building.', current_startup: 'MY STARTUP · NAMTAFLABS',
     intone_tagline: 'Less friction.\nMore possibilities.', intone_description: 'A lab for AI-powered productivity tools. I build solutions that automate tasks and help developers focus on creating.', visit_intone: 'Explore Intone',
@@ -45,6 +45,7 @@
     themeButton.setAttribute('aria-pressed', String(dark));
     menuButton.setAttribute('aria-label', menuButton.getAttribute('aria-expanded') === 'true' ? translatedLabel('Cerrar menú', 'Close menu') : translatedLabel('Abrir menú', 'Open menu'));
     document.querySelector('.nav').setAttribute('aria-label', translatedLabel('Principal', 'Main navigation'));
+    document.querySelector('.light-controls').setAttribute('aria-label', translatedLabel('Iluminación de la página', 'Page lighting'));
   }
   function setLanguage(next) {
     language = next === 'en' ? 'en' : 'es';

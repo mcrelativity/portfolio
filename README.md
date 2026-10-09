@@ -23,7 +23,9 @@ El portafolio personal está publicado con Vercel Hobby, sujeto a sus límites d
 ## Contenido y accesibilidad
 
 - Contenido español en `index.html`; traducciones inglesas en `js/app.js`. El selector guarda la preferencia; `?lang=es` y `?lang=en` permiten seleccionar idioma mediante URL.
-- Estilos en `css/liquid-glass.css`. Preferencias de movimiento y transparencia reducidos, navegación por teclado, enlace para saltar al contenido y menú móvil accesible.
+- Estilos base en `css/liquid-glass.css` y material óptico en `css/optical.css`: iluminación ambiental, bordes irisados y superficies translúcidas. El selector Aurora / Cristal / Solar guarda su preferencia localmente.
+- `js/optical.js` coordina los reflejos del cursor y la inclinación de la foto en escritorio. Actualiza la luz a un máximo de 30 fps mientras se mueve el puntero; en pantallas táctiles simplifica los efectos. Respeta las preferencias de movimiento y transparencia reducidos.
+- Navegación por teclado, enlace para saltar al contenido y menú móvil accesible.
 - Fotografías y credenciales originales optimizadas localmente en WebP. Las ilustraciones de proyectos son composiciones CSS, no capturas de las aplicaciones.
 - Contacto por `mailto:`; copiar email muestra una alternativa si el navegador no permite acceder al portapapeles.
 - Al no existir CV ni fechas verificadas de experiencia en la página original, no se añaden esos datos.

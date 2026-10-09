@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es" data-theme="light">
+<html lang="es" data-theme="light" data-light="aurora">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,11 +17,13 @@
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="/assets/portrait.webp" as="image" type="image/webp">
   <link rel="stylesheet" href="/css/liquid-glass.css">
+  <link rel="stylesheet" href="/css/optical.css">
   <script src="/js/app.js" defer></script>
+  <script src="/js/optical.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main" data-i18n="skip">Saltar al contenido</a>
-  <div class="ambient" aria-hidden="true"><div class="ambient-blue"></div><div class="ambient-violet"></div><div class="ambient-peach"></div></div>
+  <div class="ambient" aria-hidden="true"><div class="ambient-blue"></div><div class="ambient-violet"></div><div class="ambient-peach"></div><div class="ambient-caustic"></div><div class="ambient-cursor"></div></div>
   <svg class="svg-defs" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
     <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
     <symbol id="icon-external" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></symbol>
@@ -69,8 +71,10 @@
         <p class="hero-description" data-i18n="hero_description">Construyo aplicaciones web, integro IA y diseño soluciones cloud. Código claro, experiencias simples y productos que resuelven problemas reales.</p>
         <div class="hero-actions"><a class="button button-dark" href="#projects"><span data-i18n="cta_projects">Explorar proyectos</span><svg><use href="#icon-arrow"/></svg></a><a class="button button-glass glass" href="mailto:gomez.emiliano762@gmail.com"><span data-i18n="cta_contact">Conversemos</span><svg><use href="#icon-external"/></svg></a></div>
         <div class="hero-social"><a href="https://github.com/mcrelativity" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Emiliano Gómez"><svg><use href="#icon-github"/></svg></a><a href="https://linkedin.com/in/emilianogomez1" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Emiliano Gómez"><svg><use href="#icon-linkedin"/></svg></a><span class="social-divider"></span><span class="availability"><span class="status-dot"></span><span data-i18n="available_short">Abierto a oportunidades</span></span></div>
+        <div class="light-controls" role="group" aria-label="Iluminación de la página"><span class="light-label"><svg><use href="#icon-sun"/></svg><span data-i18n="light_label">Luz</span></span><div class="scene-picker glass"><button class="scene-button" data-scene="aurora" type="button" aria-pressed="true"><span class="scene-swatch swatch-aurora" aria-hidden="true"></span><span>Aurora</span></button><button class="scene-button" data-scene="crystal" type="button" aria-pressed="false"><span class="scene-swatch swatch-crystal" aria-hidden="true"></span><span data-i18n="scene_crystal">Cristal</span></button><button class="scene-button" data-scene="solar" type="button" aria-pressed="false"><span class="scene-swatch swatch-solar" aria-hidden="true"></span><span>Solar</span></button></div></div>
       </div>
       <div class="hero-visual">
+        <div class="optical-lens" aria-hidden="true"><div class="lens-rim"></div><div class="lens-rim lens-rim-inner"></div><div class="lens-flare"></div></div>
         <div class="portrait-orbit orbit-one" aria-hidden="true"></div><div class="portrait-orbit orbit-two" aria-hidden="true"></div>
         <div class="floating-tag tag-cloud glass"><span class="tag-icon"><svg><use href="#icon-cloud"/></svg></span><span><strong>Cloud-first</strong><small>AWS Solutions Architect</small></span></div>
         <figure class="portrait-card glass"><div class="portrait-inner"><img src="/assets/portrait.webp" alt="Emiliano Gómez" width="640" height="800" fetchpriority="high"><figcaption class="portrait-caption"><span><strong>Emiliano Gómez</strong><small data-i18n="portrait_role">Desarrollador & creador</small></span><span class="portrait-location"><svg><use href="#icon-pin"/></svg>Chile</span></figcaption></div></figure>
